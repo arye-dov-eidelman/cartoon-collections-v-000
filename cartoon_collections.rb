@@ -10,10 +10,11 @@ def summon_captain_planet(elements)
 end
 
 def long_planeteer_calls(calls)
-  calls.any? { |calls|  calls.length < 5}
+  calls.any? { |call|  call.length < 5}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(ingredients)
+  ingredients.include do |ingredient|
+    "cheddar" if "ingredient" == "cheddar"
+  end
 end
